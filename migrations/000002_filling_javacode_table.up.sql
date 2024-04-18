@@ -1,0 +1,1 @@
+INSERT INTO javacode (id, sum) VALUES (1, 1000)
