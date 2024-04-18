@@ -33,8 +33,6 @@ func Run() {
 	serv := service.NewServ(cfg, slogger, rep)
 	trans := transport.NewApi(cfg, slogger, serv)
 
-	// a := authRepository.NewRep()
-
 	go trans.StartHTTP()
 
 	quit := make(chan os.Signal, 1)
